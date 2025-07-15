@@ -1,4 +1,4 @@
-FROM:current-alpine3.22
+FROM node:18-alpine
 
 WORKDIR /app
 
@@ -8,6 +8,6 @@ RUN npm install
 
 EXPOSE 3001
 
-CMD ["npm","start"]
+CMD ["node","server.js"]
 
 
